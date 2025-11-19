@@ -55,8 +55,16 @@ export const profileSlice = createSlice({
         setLightMode(state,action){
             state.lightMode=action.payload;
         },
+        logout(state) {
+            state.user = null;
+            state.token = null;
+            state.signUpData = null;
+            localStorage.removeItem("Hire_Vision_user");
+            localStorage.removeItem("Hire_Vision_token");
+            localStorage.removeItem("Hire_Vision_token_expire");
+        },
     },
 });
 
-export const { setUser, setToken, setSignupData,setLightMode } = profileSlice.actions;
+export const { setUser, setToken, setSignupData, setLightMode, logout } = profileSlice.actions;
 export default profileSlice.reducer;

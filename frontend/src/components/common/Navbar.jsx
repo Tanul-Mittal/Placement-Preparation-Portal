@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     // profile slice se user nikal ke print karte hain
@@ -20,13 +21,20 @@ const Navbar = () => {
 
             {/* Right Email + Profile */}
             <div className="flex items-center gap-4">
-                <p className="text-sm font-medium">{user.email}</p>
+                <p className="text-sm font-medium">{user?.email}</p>
 
                 <img 
                     src="https://i.pravatar.cc/50"   
                     alt="profile"
                     className="h-10 w-10 rounded-full object-cover border"
                 />
+
+                <Link
+                    to="/logout"
+                    className="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm font-medium"
+                >
+                    Logout
+                </Link>
             </div>
         </nav>
     );

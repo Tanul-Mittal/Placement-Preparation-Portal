@@ -9,6 +9,7 @@ import Footer from "./components/common/Footer";
 import UpdatePassword from "./components/authentication/UpdatePassword";
 import NotFound from "./components/Error/NotFound"
 import HomePage from "./components/Home/HomePage"
+import Logout from "./components/authentication/Logout"
 
 
 
@@ -53,9 +54,12 @@ function App() {
                                 path="/"
                                 element={<HomePage />}
                             />
-                            
                         </>
                     )}
+                    <Route
+                        path="/logout"
+                        element={<Logout />}
+                    />
 
                     {/* Fallback route for unknown paths */}
                     <Route path="/*" element={<NotFound />} />
