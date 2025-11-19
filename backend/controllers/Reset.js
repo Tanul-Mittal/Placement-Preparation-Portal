@@ -138,6 +138,7 @@ export const modfiyUserProfile = async (req, res) => {
 
         // whitelist of fields that can be modified
         const allowed = [
+            "name",
             "email",
             "college",
             "dateOfBirth",
@@ -159,6 +160,18 @@ export const modfiyUserProfile = async (req, res) => {
                 success: false,
                 message: "No valid fields provided to update.",
             });
+        }
+
+        // name validation and normalization
+        if (updates.name) {
+            const name = String(updates.name).trim();
+            if (name.length === 0 || name.length > 100) {
+                return res.status(400).json({
+                    success: false,
+                    message: "Name must be between 1 and 100 characters.",
+                });
+            }
+            updates.name = name;
         }
 
         // email normalization + validation + uniqueness check
