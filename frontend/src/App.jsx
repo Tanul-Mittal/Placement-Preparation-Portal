@@ -10,6 +10,7 @@ import UpdatePassword from "./components/authentication/UpdatePassword";
 import NotFound from "./components/Error/NotFound"
 import HomePage from "./components/Home/HomePage"
 import Logout from "./components/authentication/Logout"
+import { Toaster } from "react-hot-toast";
 
 
 
@@ -66,6 +67,7 @@ function App() {
                 </Routes>
             </main>
             {user && <Footer />}
+            <Toaster position="top-center" />
         </div>
     );
 }

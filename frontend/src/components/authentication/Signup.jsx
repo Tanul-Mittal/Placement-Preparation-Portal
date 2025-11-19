@@ -8,6 +8,7 @@ import toast from "react-hot-toast";
 import { useSelector } from "react-redux";
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill, RiLockPasswordLine } from "react-icons/ri";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import axios from "axios";
 import signup from "../../assets/Signup.png"
 
@@ -21,6 +22,8 @@ function Signup() {
 
 
     const [loading,setLoading]=useState(false);
+    const [showPassword, setShowPassword] = useState(false);
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false);
     
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -102,9 +105,9 @@ function Signup() {
                                     <div className="flex flex-row items-center mt-1">
                                         <RiLockPasswordFill />
                                     </div>
-                                    <div className="w-full">
+                                    <div className="w-full flex items-center">
                                         <input
-                                            type="password"
+                                            type={showPassword ? "text" : "password"}
                                             placeholder="Enter password"
                                             className="w-full outline-none h-10 placeholder:text-xs"
                                             id="password"
@@ -112,6 +115,17 @@ function Signup() {
                                                 required: "Password is required.",
                                             })}
                                         />
+                                        <button
+                                            type="button"
+                                            onClick={() => setShowPassword(!showPassword)}
+                                            className="ml-2 text-gray-600 hover:text-gray-800 focus:outline-none"
+                                        >
+                                            {showPassword ? (
+                                                <AiOutlineEyeInvisible className="w-5 h-5" />
+                                            ) : (
+                                                <AiOutlineEye className="w-5 h-5" />
+                                            )}
+                                        </button>
                                     </div>
                                 </div>
                                 {errors.password && (
@@ -123,9 +137,9 @@ function Signup() {
                                     <div className="flex flex-row items-center mt-1">
                                         <RiLockPasswordLine />
                                     </div>
-                                    <div className="w-full">
+                                    <div className="w-full flex items-center">
                                         <input
-                                            type="password"
+                                            type={showConfirmPassword ? "text" : "password"}
                                             placeholder="Confirm password"
                                             className="w-full outline-none h-10 placeholder:text-xs"
                                             id="confirmPassword"
@@ -135,6 +149,17 @@ function Signup() {
                                                     value === password || "Passwords do not match",
                                             })}
                                         />
+                                        <button
+                                            type="button"
+                                            onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                                            className="ml-2 text-gray-600 hover:text-gray-800 focus:outline-none"
+                                        >
+                                            {showConfirmPassword ? (
+                                                <AiOutlineEyeInvisible className="w-5 h-5" />
+                                            ) : (
+                                                <AiOutlineEye className="w-5 h-5" />
+                                            )}
+                                        </button>
                                     </div>
                                 </div>
                                 {errors.confirmPassword && (

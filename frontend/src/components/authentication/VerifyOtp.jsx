@@ -71,48 +71,56 @@ const VerifyOtp = () => {
     };
 
     return (
-        <div className="flex items-center justify-center h-screen w-full bg-bgWhite text-black bg-[#e9edf0]">
-            <div className="flex flex-col bg-white rounded-lg p-5 gap-2">
-                <h2 className="text-xl font-semibold">Verify Email</h2>
-                <div className="mx-auto w-11/12 mt-8 ">
-                    <div className="flex flex-col gap-2">
-                        <p className="text-sm font-semibold">
-                            The verification code has been sent to you. Enter
-                            the code below
-                        </p>
-                    </div>
+        <div className="flex items-center justify-center h-screen w-full bg-[#e9edf0] text-black">
+            <div className="flex flex-col bg-white rounded-lg shadow-lg p-8 gap-4 w-full max-w-md">
+                <h2 className="text-2xl font-bold text-gray-800">Verify Email</h2>
+                <div className="flex flex-col gap-3">
+                    <p className="text-sm text-gray-600">
+                        The verification code has been sent to you. Enter
+                        the code below
+                    </p>
+                </div>
 
-                    <div className="text-lg flex space-x-8 mt-5">
-                        <OtpInput
-                            value={otp}
-                            onChange={setOtp}
-                            numInputs={6}
-                            renderSeparator={<span className="mx-1">-</span>}
-                            renderInput={(props) => <input {...props} />}
-                            id="otpstyle"
-                            inputStyle="inputStyle"
-                        />
-                    </div>
-                    <div>
-                        <p className="text-xs mt-3">
-                            Didn't receive the OTP?{" "}
-                            <button onClick={handleResendOTP}>
-                                <span className="font-bold hover:text-theme">
-                                    Resend OTP
-                                </span>
-                            </button>
-                        </p>
-                    </div>
-
-                    <div className="flex justify-end my-5">
-                        <button
-                            onClick={handleSubmit}
-                            className={`text-white bg-[#007aff] px-6 py-2 rounded-md hover:scale-95 transition-all duration-200 opacity-85 w-fit font-semibold ${loading ? "opacity-70" : "opacity-100"}`}
+                <div className="flex justify-center my-4">
+                    <OtpInput
+                        value={otp}
+                        onChange={setOtp}
+                        numInputs={6}
+                        renderSeparator={<span className="mx-1 text-gray-400 text-lg">-</span>}
+                        renderInput={(props) => (
+                            <input
+                                {...props}
+                                className="w-14 h-14 text-center text-2xl font-bold border-2 border-gray-300 rounded-md focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200 transition-all duration-200 hover:border-gray-400"
+                            />
+                        )}
+                        containerStyle={{
+                            display: "flex",
+                            justifyContent: "center",
+                            gap: "0.75rem"
+                        }}
+                    />
+                </div>
+                <div className="mt-2">
+                    <p className="text-sm text-gray-600 text-center">
+                        Didn't receive the OTP?{" "}
+                        <button 
+                            onClick={handleResendOTP}
                             disabled={loading}
+                            className="font-semibold text-blue-600 hover:text-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                            Verify
+                            Resend OTP
                         </button>
-                    </div>
+                    </p>
+                </div>
+
+                <div className="flex justify-end mt-6">
+                    <button
+                        onClick={handleSubmit}
+                        className={`text-white bg-[#007aff] px-8 py-3 rounded-md hover:bg-blue-700 hover:scale-105 transition-all duration-200 w-fit font-semibold shadow-md ${loading ? "opacity-70 cursor-not-allowed" : "opacity-100"}`}
+                        disabled={loading}
+                    >
+                        {loading ? "Verifying..." : "Verify"}
+                    </button>
                 </div>
             </div>
         </div>
