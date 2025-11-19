@@ -7,9 +7,10 @@ import Login from "./components/authentication/Login";
 import ForgotPassword from "./components/authentication/ForgotPassword";
 import Footer from "./components/common/Footer";
 import UpdatePassword from "./components/authentication/UpdatePassword";
-import NotFound from "./components/Error/NotFound"
-import HomePage from "./components/Home/HomePage"
+import NotFound from "./components/error/NotFound"
+import HomePage from "./components/home/HomePage"
 import Logout from "./components/authentication/Logout"
+import ProfilePage from "./components/profile/ProfilePage"
 import { Toaster } from "react-hot-toast";
 
 
@@ -54,6 +55,10 @@ function App() {
                             <Route
                                 path="/"
                                 element={<HomePage />}
+                            />
+                            <Route
+                                path="/profile"
+                                element={<ProfilePage />}
                             />
                         </>
                     )}

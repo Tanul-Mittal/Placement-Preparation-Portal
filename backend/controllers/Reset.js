@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 import User from "../models/User.js";
 import { mailSender } from "../utils/mailSender.js";
 import bcrypt from "bcrypt";
@@ -120,12 +121,12 @@ export const resetPassword = async (req, res) => {
 export const modfiyUserProfile = async (req, res) => {
     try {
         // determine target user id
-        const targetId = (req.user && req.user._id) || req.params.id;
+        const targetId = (req.user && req.user._id) || req.params.id || req.body.userId;
         if (!targetId) {
             return res.status(400).json({
                 success: false,
                 message:
-                    "No user id provided (use authenticated user or pass id in params).",
+                    "No user id provided (use authenticated user or pass id in params/body).",
             });
         }
 
@@ -153,6 +154,10 @@ export const modfiyUserProfile = async (req, res) => {
                 updates[key] = req.body[key];
             }
         }
+
+        
+        // Remove userId from updates if it was added
+        delete updates.userId;
 
         // nothing to update
         if (Object.keys(updates).length === 0) {
@@ -233,7 +238,15 @@ export const modfiyUserProfile = async (req, res) => {
                     message: "Invalid dateOfBirth.",
                 });
             }
-            updates.dateOfBirth = dob;
+            // Map dateOfBirth to dateofBirth (model field name)
+            updates.dateofBirth = dob;
+            delete updates.dateOfBirth; // Remove the camelCase version
+        }
+
+        // Map passoutYear to passoutyear (model field name)
+        if (updates.passoutYear) {
+            updates.passoutyear = updates.passoutYear;
+            delete updates.passoutYear; // Remove the camelCase version
         }
 
         // finally update

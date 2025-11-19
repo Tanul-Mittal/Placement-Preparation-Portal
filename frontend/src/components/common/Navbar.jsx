@@ -1,10 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     // profile slice se user nikal ke print karte hain
     const user = useSelector((state) => state.profile.user);
+    const navigate = useNavigate();
     console.log("Navbar.jsx user:", user);
     
     return (
@@ -26,7 +27,8 @@ const Navbar = () => {
                 <img 
                     src="https://i.pravatar.cc/50"   
                     alt="profile"
-                    className="h-10 w-10 rounded-full object-cover border"
+                    className="h-10 w-10 rounded-full object-cover border cursor-pointer hover:ring-2 hover:ring-blue-500 transition-all"
+                    onClick={() => navigate("/profile")}
                 />
 
                 <Link

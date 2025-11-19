@@ -8,7 +8,7 @@ export const authenticationEndpoints = {
     SEND_OTP_API: `${API_BASE}/authentication/sendOtp`,
     RESETPASSWORD_API: `${API_BASE}/authentication/resetPassword`,
     RESETPASSTOKEN_API: `${API_BASE}/authentication/resetPasswordToken`,
-    MODIFY_USER_DATA_API: `${API_BASE}/authentication/resetPasswordToken`,
+    UPDATE_PROFILE_API: `${API_BASE}/authentication/updateProfile`,
 };
 
 
