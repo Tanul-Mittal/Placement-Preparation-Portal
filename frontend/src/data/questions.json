@@ -1,0 +1,358 @@
+{
+  "questions": [
+    {
+      "question": "What is the output of 2 + \"2\" in JavaScript?",
+      "options": ["22", "4", "NaN", "undefined"],
+      "correctAnswer": "22",
+      "hasOptions": true,
+      "category": "DSA",
+      "subcategory": "JavaScript",
+      "explanation": "String + number results in string concatenation.",
+      "company": ["Google", "Amazon"],
+      "question_image": []
+    },
+    {
+      "question": "In a binary search tree, which traversal prints sorted order?",
+      "options": ["Preorder", "Inorder", "Postorder", "Level Order"],
+      "correctAnswer": "Inorder",
+      "hasOptions": true,
+      "category": "DSA",
+      "subcategory": "Trees",
+      "explanation": "Inorder traversal gives sorted order in BST.",
+      "company": ["Microsoft"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "Which data structure uses FIFO order?",
+      "options": ["Stack", "Queue", "Tree", "Graph"],
+      "correctAnswer": "Queue",
+      "hasOptions": true,
+      "category": "CoreCS",
+      "subcategory": "Data Structure",
+      "explanation": "Queue works on First In, First Out.",
+      "company": ["Flipkart", "TCS"],
+      "question_image": []
+    },
+    {
+      "question": "If a train travels at 60 km/h, how far will it go in 2.5 hours?",
+      "options": ["120 km", "150 km", "100 km", "180 km"],
+      "correctAnswer": "150 km",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Speed & Distance",
+      "explanation": "Distance = Speed × Time = 60 × 2.5 = 150 km.",
+      "company": ["Infosys"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    },
+    {
+      "question": "What is the time complexity of binary search?",
+      "options": ["O(n)", "O(log n)", "O(n log n)", "O(1)"],
+      "correctAnswer": "O(log n)",
+      "hasOptions": true,
+      "category": "Aptitude",
+      "subcategory": "Complexity",
+      "explanation": "Binary search divides the array in half each step.Hence, time complexity is O(log lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.n).",
+      "company": ["Google"],
+      "question_image": []
+    }
+
+
+  ]
+}
