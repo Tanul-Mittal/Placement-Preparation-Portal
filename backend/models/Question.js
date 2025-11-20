@@ -20,7 +20,7 @@ const QuestionSchema = new mongoose.Schema({
     },
     category: {
         type: String,
-        enum: ['Reasoning', 'Aptitude', 'DSA','CoreCS'],
+        enum: ['reasoning', 'aptitude', 'dsa', 'corecs'],
         required: true,
     },
     subcategory: {

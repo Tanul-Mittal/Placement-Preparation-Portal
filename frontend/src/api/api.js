@@ -14,4 +14,6 @@ export const authenticationEndpoints = {
 
 export const questionEndpoint = {
     ADD_QUESTION_API: `${API_BASE}/question/addQuestions`,
+    RETRIEVE_COMPANY_WISE_QUESTION_API: `${API_BASE}/question/retrieveQuestionsCompanyWise`,
+    GET_COMPANIES_API: `${API_BASE}/question/getAllCompanyNames`,
 };

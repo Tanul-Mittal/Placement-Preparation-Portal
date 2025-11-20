@@ -2,7 +2,6 @@ import mongoose from "mongoose";
 import Question from "../models/Question.js";
 import Company from "../models/Company.js";
 
-const VALID_CATEGORIES = ["Reasoning", "Aptitude", "DSA", "CoreCS"];
 
 export const addQuestions = async (req, res) => {
     try {
@@ -49,8 +48,11 @@ export const addQuestions = async (req, res) => {
             }
 
             // category validation (since model requires it)
-            if (!category || !VALID_CATEGORIES.includes(category)) {
-                errors.push({
+            const VALID_CATEGORIES = ['reasoning', 'aptitude', 'dsa', 'corecs'];
+
+            if (!category || typeof category !== 'string' || !VALID_CATEGORIES.includes(category.trim().toLowerCase())) {
+            
+                    errors.push({
                     index: i,
                     question,
                     message: `Invalid or missing category. Allowed: ${VALID_CATEGORIES.join(
@@ -228,7 +230,108 @@ export const addQuestions = async (req, res) => {
     }
 };
 
-// helper to escape user input for regex
-function escapeRegExp(string) {
-    return string.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+export const retrieveQuestionsCompanyWise = async (req, res) => {
+    try {
+        const { company } = req.body;
+
+        if (!company) {
+            return res.status(400).json({
+                success: false,
+                message: "'company' (id or name) is required.",
+            });
+        }
+
+        // Normalize company input to array
+        const companyInputs = Array.isArray(company) ? company : [company];
+
+        // Resolve companies → fetch full company docs
+        const resolvedCompanies = [];
+
+        for (const comp of companyInputs) {
+            let foundCompany = null;
+
+            if (mongoose.isValidObjectId(comp)) {
+                foundCompany = await Company.findById(comp);
+            } else {
+                const name = String(comp).trim();
+                foundCompany = await Company.findOne({
+                    company: { $regex: `^${escapeRegExp(name)}$`, $options: "i" }
+                });
+            }
+
+            if (foundCompany) resolvedCompanies.push(foundCompany);
+        }
+
+        if (resolvedCompanies.length === 0) {
+            return res.status(404).json({
+                success: false,
+                message: "No matching companies found.",
+            });
+        }
+
+        // Collect all question IDs from all matched companies
+        const allQuestionIds = resolvedCompanies.flatMap(c => c.questions);
+
+        if (allQuestionIds.length === 0) {
+            return res.status(200).json({
+                success: true,
+                message: "Company found but has no questions.",
+                data: [],
+            });
+        }
+
+        // Fetch all questions belonging to these companies
+        const questions = await Question.find({
+            _id: { $in: allQuestionIds }
+        })
+            .populate("company", "company company_img _id")
+            .sort({ createdAt: -1 })
+            .lean();
+
+        return res.status(200).json({
+            success: true,
+            companyCount: resolvedCompanies.length,
+            totalQuestions: questions.length,
+            companies: resolvedCompanies.map(c => ({
+                _id: c._id,
+                company: c.company,
+                company_img: c.company_img,
+                questionCount: c.questions.length,
+            })),
+            data: questions,
+        });
+    } catch (error) {
+        console.error("Error in retrieveQuestionsCompanyWise:", error);
+        return res.status(500).json({
+            success: false,
+            message: "Error retrieving company-wise questions: " + error.message,
+        });
+    }
+};
+
+export const getAllCompanyNames = async (req, res) => {
+    try {
+        const companies = await Company.find({})
+            .select("company -_id")   // ONLY return company name
+            .sort({ company: 1 })     // alphabetical
+            .lean();
+
+        return res.status(200).json({
+            success: true,
+            total: companies.length,
+            data: companies.map(c => c.company),
+        });
+    } catch (error) {
+        console.error("Error retrieving company names:", error);
+        return res.status(500).json({
+            success: false,
+            message: "Error retrieving company names: " + error.message,
+        });
+    }
+};
+
+
+// helper
+function escapeRegExp(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
